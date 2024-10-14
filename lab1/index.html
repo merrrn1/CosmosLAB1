@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestia - Планетарий</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper">
+            <a href="#" class="header__link">
+                <img src="./img/svg/лого.png" alt="Логотип Celestia" class="header-logo-image">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">События</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+        </nav>
+        <ul class="header__social-list social-list">
+            <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                    <img src="#" alt="Telegram" class="social-list__img">
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="#" class="social-list__link">
+                    <img src="#" alt="WhatsApp" class="social-list__img">
+                </a>
+            </li>
+        </ul>
+    </header>
+    <button class="header__button">
+        <span>Меню</span>
+        <img src="#" alt="Меню">
+    </button>
+    <main>
+        <section class="banner">
+            <div class="banner__wrapper">
+                <div class="banner__main-card banner__main-card">
+                    <h1 class="banner__heading">
+                        Раскройте тайны звёзд с помощью Celestia
+                    </h1>
+                    <p class="banner__description">
+                        Мы проведём специальные мероприятия, такие как ночи наблюдения
+                        за звёздами, лекции и многое другое
+                    </p>
+                    <a href="#" class="banner__link">
+                        Подробнее
+                    </a>
+                </div>
+
+                <div class="banner__discount-card discount-card">
+                    <h2 class="banner__heading">
+                        20%
+                    </h2>
+                    <p class="discount-card__description">
+                        скидки пенсионерам
+                    </p>
+                    <a class="discount-card__link" href="#">
+                        <img class="discount-card__img" src="#" alt="Подробнее">
+                    </a>
+                </div>
+
+                <div class="banner__category-card category-card">
+                    <h2 class="category-card__heading">
+                        для парочек
+                    </h2>
+                    <p class="category-card__description">
+                        ночи наблюдения за звёздами
+                    </p>
+                    <a class="category-card__link" href="#">
+                        <img class="category-card__img" src="#" alt="Подробнее">
+                    </a>
+                </div>
+
+                <div class="banner__features">
+                    <img class="banner__image" src="#" alt="Логотип">
+                    <h2 class="banner__heading">
+                        Онлайн-прогулка
+                    </h2>
+                    <ul class="banner__list">
+                        <li class="banner__item">
+                            <p class="banner__description">
+                                >50 залов
+                            </p>
+                        </li>
+                        <li class="banner__item">
+                            <p class="banner__description">
+                                >100 программ про Вселенную
+                            </p>
+                        </li>
+                        <li class="banner__item">
+                            <p class="banner__description">
+                                >20 телескопов
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="events_main">
+            <div class="events__wrapper">
+                <h2 class="events__heading">События</h2>
+
+                <ul class="events__tabs">
+                    <li class="events__tab"><button class="events__button">Программы</button></li>
+                    <li class="events__tab"><button class="events__button">Мероприятия</button></li>
+                    <li><button class="events__button">Лекции</button></li>
+                </ul>
+
+                <div class='event_info'>
+                    <img src="#" alt="Космос" id="card__img">
+                    <p>7+</p>
+                    <p>ПОЛНОКУПОЛЬНАЯ ПРОГРАММА</p>
+                    <h3 class="card__subtitle">Прогулка по звёздному небу</h3>
+                    <p id="card__description">
+                        Мы предлагаем вам прогуляться по самым ярким созвездиям северного полушария, насладиться
+                        петербургским звездным небом всех сезонов, полюбоваться Млечным Путём и, конечно,
+                        загадать заветное желание на "падающую" звезду
+                    </p>
+                </div>
+
+                <div class="ticket">
+                    <img src="#" alt="иконка детского билета" id='chld_icn'>
+                    <img src="#" alt="иконка взрослого билета" id='adult_icn'>
+                    <p>400Р</p>
+                    <p>600Р</p>
+                </div>
+
+                <form action="#" class="events__form-event form-event" method="post">
+                    <label class="form-event__label">
+                        <span>Выбрать дату</span>
+                        <select name="dateEvent" required>
+                            <option value="" disabled>Выбрать дату</option>
+                            <option value="03.10.24">3 октября 2024 года</option>
+                            <option value="04.10.24">4 октября 2024 года</option>
+                            <option value="05.10.24">5 октября 2024 года</option>
+                        </select>
+                    </label>
+                    <button type="submit">Купить билет</button>
+                </form>
+
+                <ul class="events__list">
+                    <li class="events__item">
+                        <img src="./img/child-ticket-icon.png" alt="Детский билет" class="events__icon">
+                        <p>400 ₽</p>
+                    </li>
+                    <li class="events__item">
+                        <img src="./img/adult-ticket-icon.png" alt="Взрослый билет" class="events__icon">
+                        <p>600 ₽</p>
+                    </li>
+                </ul>
+
+                <form action="#" class="form form--event" method="post">
+                    <label for="event_name" class="form__label">Записаться на мероприятие</label>
+                    <input id="event_name" name="nameEvent" placeholder="Ваше имя" required>
+                    <input id="phone" name="phoneEvent" placeholder="Ваш телефон" required>
+                    <button type="submit">Записаться</button>
+                </form>
+            </div>
+        </section>
+
+        <section id='prm_sale'>
+            <h2>Акции и скидки</h2>
+            <div class="sale_p">
+                <img src="#" alt="Фото стариков" id='stariki'>
+                <span>Скидка для пенсионеров</span>
+                <p>Все пенсионеры получат 20% скидку на билет при посещении планетария</p>
+                <button><img src="#" alt="стрелка в левый нижний угол"></button>
+            </div>
+            <ul class="nav_btn">
+                <li><button><img src="#" alt="стрелка влево"></button></li>
+                <li><button><img src="#" alt="стрелка вправо"></button></li>
+            </ul>
+        </section>
+
+        <section id='fedback_marks'>
+            <h2>Отзывы и отметки</h2>
+            <div>
+                <img src="#" alt="фото клиента">
+                <img src="#" alt="фото отзыва">
+                <p>#stellarium</p>
+                <p>#планетарий</p>
+                <ul class="nav_btn_2">
+                    <li><button><img src="#" alt="стрелка влево"></button></li>
+                    <li><button><img src="#" alt="стрелка вправо"></button></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="FAQ">
+            <h2>Часто задаваемые вопросы</h2>
+            <p>Какие выставки и события, посвященные космосу, проходят в планетарии?</p>
+            <p>Выставка фотографий и изображений космических объектов, интерактивные демонстрации о нашей Солнечной
+                системе, путешествиях по галактикам и другим небесным телам. Также проводятся лекции и семинары о
+                космической науке и астрономии, а иногда даже организуются ночные наблюдения за звездами.</p>
+            <ul class='q_list'>
+                <li><a href="#">Какие возможности есть для детей на выставках в планетарии?</a></li>
+                <li><a href="#">Какова стоимость посещения выставок и событий в планетарии?</a></li>
+                <li><a href="#">Как я могу поддержать планетарий?</a></li>
+            </ul>
+            <button>
+                Показать ещё
+            </button>
+        </section>
+        
+        <section id="registration">
+            <h2>Ваш билет в космос — быстрая запись на экскурсию</h2>
+            <p>Запишитись на экскурсию в планетарий. Просто укажите ваше имя, электронную
+                почту и дату, и мы свяжемся с вами для подтверждения</p>
+                <form class="registration__name" action="#" method="post">
+                    <label>
+                        <input type="text" name="name" placeholder="Введите ваше имя">
+                    </label>
+                </form>
+                    <form class="registration__phone" action="#" method="post">
+                        <label>
+                            <input type="tel" name="name" placeholder="Номер телефона">
+                        </label>
+                    </form>
+                    <form class="registration__date" action="#" method="post">
+                        <label class="registration__label">
+                            <select name="dateEvent" required>
+                                <option value="" disabled selected>
+                                    Дата посещения
+                                </option>
+                                <option value="03.10.24">
+                                    3 октября 2024 года
+                                </option>
+                                <option value="04.10.24">
+                                    4 октября 2024 года
+                                </option>
+                                <option value="05.10.24">
+                                    5 октября 2024 года
+                                </option>
+                            </select>
+                        </label>
+                        <button type="submit">
+                            Отправить
+                        </button>
+                    </form>
+            <div>
+                <img src="#" alt="Два космонавта">
+            </div>
+            <p>*Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section id="footer__heading">
+            <h2>Как нас найти?</h2>
+            <img class="footer__image" alt="Карта">
+
+        <div class="footer__wrapper">
+            <p class="footer__address">Екатеринбург, ул. Маршала Жукова, дом 12</p>
+            <ul class="footer__social-media-list">
+                <li class="footer__social-media-item">
+                    <a href="#" class="footer__social-media-link">
+                        <img src="#" alt="Иконка Facebook" class="footer__social-media-image">
+                    </a>
+                </li>
+                <li class="footer__social-media-item">
+                    <a href="#" class="footer__social-media-link">
+                        <img src="#" alt="Иконка Instagram" class="footer__social-media-image">
+                    </a>
+                </li>
+                <li class="footer__social-media-item">
+                    <a href="#" class="footer__social-media-link">
+                        <img src="#" alt="Иконка Youtube" class="footer__social-media-image">
+                    </a>
+                </li>
+
+            </ul>
+
+            <div>
+                <ul class="footer__social-list social-list">
+
+                    <li class="social-list__item">
+                        <a href="#" class="social-list__link">
+                            <img src="#" alt="WhatsApp" class="social-list__img">
+                        </a>
+                    </li>
+
+                    <li class="social-list__item">
+                        <a href="#" class="social-list__link">
+                            <img src="#" alt="Telegram" class="social-list__img">
+                        </a>
+                    </li>
+                </ul>
+
+                <a href="tel:+78123363636">
+                    +7(812)3363636
+                </a>
+            </div>
+
+        </div>
+
+        <form action="#" class="footer__form">
+            <div class="footer__wrapper">
+                <h2 class="footer__heading">
+                    Подписаться на рассылку
+                </h2>
+                <label class="footer__label" for="email">
+                    Электронная почта
+                </label>
+                <input type="email" id="email" class="footer__email" placeholder="Электронная почта">
+                <button class="footer__button">
+                    Подписаться
+                </button>
+            </div>
+            <a href="#">
+                Политика конфиденциальности
+            </a>
+        </form>
+        
+        </section>
+    </footer>
+</body>
+
+</html>

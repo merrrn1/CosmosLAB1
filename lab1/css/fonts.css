@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'BenzinBold';
+    font-display: swap;
+    font-style: normal;
+    font-weight: bold;
+    src: url('/fonts/benzin_bold.woff') format('woff'),
+         url('/fonts/benzin_bold.woff2') format('woff2');
+  }
+
+@font-face {
+  font-family: 'Gilroy';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 900;
+  src: url('/fonts/gilroy-extrabold-webfont.woff') format('woff'),
+        url('/fonts/gilroy-extrabold-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  font-display: swap;
+  font-style: normal;
+  font-weight: 200;
+  src: url('/fonts/gilroy-light-webfont.woff') format('woff'),
+    url('/fonts/gilroy-light-webfont.woff2') format('woff2');
+}
